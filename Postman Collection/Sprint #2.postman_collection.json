@@ -1,0 +1,1004 @@
+{
+	"info": {
+		"_postman_id": "7a82057d-380d-42c6-9b2c-a84db3e43fcb",
+		"name": "Sprint #2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medios de Pago",
+			"item": [
+				{
+					"name": "/mediosDePago",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJuaWt5dXlvIiwibmFtZSI6Im5pa3l1eW8iLCJlbWFpbCI6Im5pa3l1eW9AZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJuaWt5dXlvIiwiYWRtaW5zIjpmYWxzZSwiZGlzYWJsZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTA4LTI0VDAyOjE2OjAzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA4LTI0VDAyOjE2OjAzLjAwMFoiLCJpYXQiOjE2Mjk4NTIyMTh9.LWkeuAoXSRPBzDymru2l-_bbD6OGacJy111J6wS_9cU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/mediosDePago",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/mediosDePago",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODUyMzg3fQ.9YWAkz0UnRA4feJkee5aaALys1YmF9GNq20gW3P4WC4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Credito\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/mediosDePago",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/mediosDePago/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "1321231231312",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Credio banesco\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/mediosDePago/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/mediosDePago/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "1321231231312",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/mediosDePago/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agenda",
+			"item": [
+				{
+					"name": "/agenda/admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text",
+								"description": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODk2MjU1fQ.bV_CZQCOYffYLlEAktKAgQ0ci4su5zP0UE8AJidUmwQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agendas/admins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agendas",
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJuaWt5dXlvMyIsIm5hbWUiOiJOaWNvbGUgUGFsZXJtbyIsImVtYWlsIjoibmlreXV5bzNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEzMzQ0NTUzMzMzIiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKd1lYTnpkMjl5WkNJNkltNXBhM2wxZVc4aUxDSnBZWFFpT2pFMk16QTBNVFExTWpsOS5UYnlwcXhMZUphTnA3WlRuOFhobFp1RlZfQlJGaGNzZF9fbDBfazZUUGxzIiwiYWRtaW5zIjpmYWxzZSwiZGlzYWJsZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTA4LTMxVDEyOjU1OjI5LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA5LTAxVDEyOjU2OjAzLjAwMFoiLCJpYXQiOjE2MzA5NjM3MzgsImV4cCI6MTYzMDk2NzMzOH0.97nxGpJQmMhOxtltX5pPCLSoc6rWfWiwA6Xdd12rdvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agendas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agendas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJuaWt5dXlvMyIsIm5hbWUiOiJOaWNvbGUgUGFsZXJtbyIsImVtYWlsIjoibmlreXV5bzNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEzMzQ0NTUzMzMzIiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKd1lYTnpkMjl5WkNJNkltNXBhM2wxZVc4aUxDSnBZWFFpT2pFMk16QTBNVFExTWpsOS5UYnlwcXhMZUphTnA3WlRuOFhobFp1RlZfQlJGaGNzZF9fbDBfazZUUGxzIiwiYWRtaW5zIjpmYWxzZSwiZGlzYWJsZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTA4LTMxVDEyOjU1OjI5LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA5LTAxVDEyOjU2OjAzLjAwMFoiLCJpYXQiOjE2MzA5NjM3MzgsImV4cCI6MTYzMDk2NzMzOH0.97nxGpJQmMhOxtltX5pPCLSoc6rWfWiwA6Xdd12rdvc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"address\": \"Argentina, CABA, Flores, Bolivia 567, 1A\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agendas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agendas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda/:addressId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"address\": \"Argentina, CABA, Flores, Rivadavia 245, 2A\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agendas/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agendas",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda/:addressId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODk2MjU1fQ.bV_CZQCOYffYLlEAktKAgQ0ci4su5zP0UE8AJidUmwQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/agendas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"agendas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "/api/v1/productos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/productos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODQ5NTY0fQ.EAhmLlqpF_6BfSoQDYrBeU5yzZzlaLnC2ej22-1T5z4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 2\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/productos/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODQ5NTY0fQ.EAhmLlqpF_6BfSoQDYrBeU5yzZzlaLnC2ej22-1T5z4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 4\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/productos/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/productos/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODQ5NTY0fQ.EAhmLlqpF_6BfSoQDYrBeU5yzZzlaLnC2ej22-1T5z4",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/productos/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productos",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "/usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"nikyuyo3\",\r\n    \"name\": \"Nicolas Palermo\",\r\n    \"email\": \"nikyuyo3@gmail.com\",\r\n    \"mobile\": \"11-22544572\",\r\n    \"address\": \"CABA, Flores, Bolivia 470, 28\",\r\n    \"password\": \"nikyuyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"nikyuyo3\",\r\n    \"password\": \"nikyuyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/login (Admis)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/admins",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios/admins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/:userId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/admins/disabled/:userId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"disabled\": true }\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/usuarios/admins/disabled/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"admins",
+								"disabled",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"addressId\": 1,\r\n    \"paymentMethodId\": 2,\r\n    \"products\":[{\r\n        \"productId\": 2,\r\n        \"quantity\": 2\r\n    },{\r\n        \"productId\": 1,\r\n        \"quantity\": 2\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos/admins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:orderId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:orderId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"addressId\": 5,\r\n    \"paymentMethodId\": 2,\r\n    \"products\":[{\r\n        \"productId\": 1,\r\n        \"quantity\": 1\r\n    },{\r\n        \"productId\": 2,\r\n        \"quantity\": 1\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:orderId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/state/:orderId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnMxQGdtYWlsLmNvbSIsIm1vYmlsZSI6IjExLTIyNTQtNDU3MiIsInBhc3N3b3JkIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SndZWE56ZDI5eVpDSTZJbUZrYldsdWN5SXNJbWxoZENJNk1UWXpNREF4TnpRM04zMC52dkxnNTFyek53WFVXN2JvTXRWT1d3QTVhVzlpdGFSbEpmZWY5OGwxalcwIiwiYWRtaW5zIjp0cnVlLCJkaXNhYmxlZCI6ZmFsc2UsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjZUMjI6Mzc6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDgtMjZUMjI6Mzc6NTcuMDAwWiIsImlhdCI6MTYzMDAxNzQ4OX0.z1E8uFjkKDUfz1aLzp4SbyRaeoT7-TaKDET5vf3AV70",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": \"Preparing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pedidos/state/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"state",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
