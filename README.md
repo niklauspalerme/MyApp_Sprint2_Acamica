@@ -44,5 +44,13 @@ Correr el test la app/api en la carpeta principal (afuera de src)
   http://localhost:8080/api-docs/
 ```
 
+- En postman en la carpeta **User** va ver 2 pestañas para login. Una que va tener las credenciales del usuario admins, que les va servir para poder acceder a ciertos endpoints que estan restringidos
+
+![login admins](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%205.JPG)
+
+- Y la otra pestaña donde despuues de haber creado su usuario deberá colocar aqui los datos de login para poder tener su token de autenticación
+
+![login usuario normal](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%206.JPG)
+
 ![swagger doc](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/inmagen%204.JPG)
 
