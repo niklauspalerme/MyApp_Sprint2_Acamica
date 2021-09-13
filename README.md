@@ -54,5 +54,4 @@ Correr el test la app/api en la carpeta principal (afuera de src)
 
 ![login usuario normal](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%206.JPG)
 
-![swagger doc](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/inmagen%204.JPG)
-
+- Importante a tener en cuenta los token de autenticación van a tener un **Time Out** de 1 hr
