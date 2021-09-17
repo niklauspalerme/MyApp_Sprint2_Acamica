@@ -8,9 +8,10 @@
  - Haber descargado **POSTMAN** en tu computador y correrlo/inicicializarlo:
     - Importar la colección que se encuentra el a carpeta **Postman Collection**
 ![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%209.JPG)
+
  - Luego debes crear un archivo llamado **.env** afuera de la carpeta **src** como se muestras en la imagen
 
-![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%209.JPG)
+![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/Imagen%20%231.JPG)
 
 - Una vez creado el archibo **env** debe copiar la información que esta en el archivo **sample** a **.env** y estará lista la aplicacion para correr localmente 
 
