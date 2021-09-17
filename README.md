@@ -3,16 +3,29 @@
 
  - Descargar el codigo de la branch **"main"**
  - Haber descargado **XAMPP** en tu computador y correrlo/inicicializarlo
+![XAMPP](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%207.JPG)
+
  - Haber descargado **POSTMAN** en tu computador y correrlo/inicicializarlo:
     - Importar la colección que se encuentra el a carpeta **Postman Collection**
+![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%209.JPG)
+
  - Luego debes crear un archivo llamado **.env** afuera de la carpeta **src** como se muestras en la imagen
- 
-![App Screenshot](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/Imagen%20%231.JPG)
+
+![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/Imagen%20%231.JPG)
 
 - Una vez creado el archibo **env** debe copiar la información que esta en el archivo **sample** a **.env** y estará lista la aplicacion para correr localmente 
 
+![App Screenshot](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%208.JPG)
+
+
 
 ## 2) Comandos para correr la app/api Local
+
+Instalar el node_modules de la app/api en la carpeta principal (afuera de src)
+
+ ```bash
+  npm install
+```
 
 Correr la app/api en la carpeta principal (afuera de src)
 
