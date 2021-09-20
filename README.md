@@ -19,21 +19,23 @@
 
 
 
-## 2) Comandos para correr la app/api Local
+## 2) Comandos para correr la app/api Local 
 
-Instalar el node_modules de la app/api en la carpeta principal (afuera de src)
+- Instalar el node_modules de la app/api en la carpeta principal (afuera de src)
 
  ```bash
   npm install
 ```
 
-Correr la app/api en la carpeta principal (afuera de src)
+- Correr la app/api en la carpeta principal (afuera de src)
 
  ```bash
   npm run dev 
 ```
 
-Correr el test la app/api en la carpeta principal (afuera de src)
+**NOTA: La creación y las cargas de las tablas se hace de manera automatica una vez que se corre el comando "npm run dev" y si se tiene activo el XAMPP**
+
+- Correr el test la app/api en la carpeta principal (afuera de src)
 
 ```bash
   npm run test
