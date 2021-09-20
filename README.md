@@ -5,6 +5,8 @@
  - Haber descargado **XAMPP** en tu computador y correrlo/inicicializarlo
 ![XAMPP](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%207.JPG)
 
+  - Descargar **redis** en el puerto default **6379**
+
  - Haber descargado **POSTMAN** en tu computador y correrlo/inicicializarlo:
     - Importar la colección que se encuentra el a carpeta **Postman Collection**
 ![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%209.JPG)
@@ -19,21 +21,23 @@
 
 
 
-## 2) Comandos para correr la app/api Local
+## 2) Comandos para correr la app/api Local 
 
-Instalar el node_modules de la app/api en la carpeta principal (afuera de src)
+- Instalar el node_modules de la app/api en la carpeta principal (afuera de src)
 
  ```bash
   npm install
 ```
 
-Correr la app/api en la carpeta principal (afuera de src)
+- Correr la app/api en la carpeta principal (afuera de src)
 
  ```bash
   npm run dev 
 ```
 
-Correr el test la app/api en la carpeta principal (afuera de src)
+**NOTA: La creación y las cargas de las tablas se hace de manera automatica una vez que se corre el comando "npm run dev" y si se tiene activo el XAMPP**
+
+- Correr el test la app/api en la carpeta principal (afuera de src)
 
 ```bash
   npm run test
