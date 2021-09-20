@@ -35,7 +35,9 @@
   npm run dev 
 ```
 
-**NOTA: La creación y las cargas de las tablas se hace de manera automatica una vez que se corre el comando "npm run dev" y si se tiene activo el XAMPP**
+- **NOTA: La creación y las cargas de las tablas se hace de manera automatica una vez que se corre el comando "npm run dev" y si se tiene activo el XAMPP**
+
+![Carga de la tablas](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%2010.JPG)
 
 - Correr el test la app/api en la carpeta principal (afuera de src)
 
