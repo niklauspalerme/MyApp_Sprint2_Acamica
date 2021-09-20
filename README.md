@@ -5,6 +5,8 @@
  - Haber descargado **XAMPP** en tu computador y correrlo/inicicializarlo
 ![XAMPP](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%207.JPG)
 
+  - Descargar **redis** en el puerto default **6379**
+
  - Haber descargado **POSTMAN** en tu computador y correrlo/inicicializarlo:
     - Importar la colección que se encuentra el a carpeta **Postman Collection**
 ![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%209.JPG)
