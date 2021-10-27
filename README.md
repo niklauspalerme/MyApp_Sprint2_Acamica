@@ -1,54 +1,78 @@
+## Sprint Proyect #2 - My APP Persistente
 
-## 1) Antes de correr la app/api necesitas:
-
- - Descargar el codigo de la branch **"main"**
- - Haber descargado **XAMPP** en tu computador y correrlo/inicicializarlo
-![XAMPP](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%207.JPG)
-
-  - Descargar **redis** en el puerto default **6379**
-
- - Haber descargado **POSTMAN** en tu computador y correrlo/inicicializarlo:
-    - Importar la colección que se encuentra el a carpeta **Postman Collection**
-![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%209.JPG)
-
- - Luego debes crear un archivo llamado **.env** afuera de la carpeta **src** como se muestras en la imagen
-
-![Postman collection](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/Imagen%20%231.JPG)
-
-- Una vez creado el archibo **env** debe copiar la información que esta en el archivo **sample** a **.env** y estará lista la aplicacion para correr localmente 
-
-![App Screenshot](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%208.JPG)
+Entrega del proyecto del Sprint #2 sobre **My APP Persistente**. Donde consiste en presentar una api que permite gestionar ordenes de los usuarios del restaurante Delilah Restó. Además se contara con un usuarip Administrador que pueda supervisar toda la aplicación 
 
 
+## Requerimientos para usar la APP de manera local
 
-## 2) Comandos para correr la app/api Local 
+- Servidor MySQL
+- Servidor Redis
+- Node JS
 
-- Instalar el node_modules de la app/api en la carpeta principal (afuera de src)
+
+## Pasos para usar la APP de manera local
+
+- Descargar el archivo zip y descomprimir el archivo
+- Ejecutar el script ubicado en la carpeta others **create_databse.sql**  en el servidor MySQL
+- Instalar paquetes en Node (Ver sección **Instalación de paquetes de Node**)
+- Generar variables de entorno (Ver sección **Variables de entorno**)
+- Iniciar la api (Ver sección **Ejecución de la APP**)
+- Iniciar el test (Ver sección **Ejecucíón del Test**)
+- Ver documentación de los endpoints de la APP (Ver sección **Documentación Endpoints (Swagger**)
+
+
+## Instalación de paquetes de Node
+
+Ejecuete el siguiente comando para iniciar la instalación de los paquetes node del proyecto
 
  ```bash
   npm install
 ```
 
-- Correr la app/api en la carpeta principal (afuera de src)
+## Variables de entorno
+
+Para ejecutar el proyecto hay que crear las variables en el archivo llamado `.env`. Puede utilizar también el archivo `sample.env` como referencia para su creación
+
+`PORT` puerto del servidor express (por defecto se sugiere usar 8080)
+`DB_USERNAME` usuario que conecta con permisos de insert/update/delete a la base de MySql
+`DB_PASSWORD` contraseña del usuario
+`DB_NAME` nombre de la base en MySQL
+`DB_PORT` puerto del servidor MySQL
+`DB_HOST` servidor del MySQL
+`REDIS_HOST` servidor del Redis
+`REDIS_PORT` puerto del servidor del redis
+`JWT_PASS` key para armar la valicación por JWT (puede utilizar cualquier valor)
+
+## Ejecución de la APP
+
+Ejecute el siguiente comando:
 
  ```bash
   npm run dev 
 ```
 
-- **NOTA: La creación y las cargas de las tablas se hace de manera automatica una vez que se corre el comando "npm run dev" y si se tiene activo el XAMPP**
+## Ejecución del test
 
-![Carga de la tablas](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%2010.JPG)
+Ejecute el siguiente comando:
 
-- Correr el test la app/api en la carpeta principal (afuera de src)
 
 ```bash
   npm run test
 ```
 
+## Documentación Endpoints (Swagger)
 
-## 3) Postman Collection
+Para poder acceder a la documentación Swagger de la api, por favor acceda al siguiente endpoint como referencia:
 
-- Se sugiere importar la coleción de Postman
+```bash
+  http://localhost:8080/api-docs/
+```
+
+## Postman Collection
+
+Puede encontrar la colección del Postman en la carpeta con el mismo nombre. Acontinuación se da mas detalle acerca de la colección Postman para una mayor comidad y entendimiendo del usuario:
+
+
 - La colección de Postman va estar dividido por los diferentes endpoints
 
 ![postman division](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%202.JPG)
@@ -57,11 +81,8 @@
 
 ![postman division](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%203.JPG)
 
-- Se sugiere leer **la documentación de Swagger** para poder tener una idea de como usar cada unos de los endpoints
+- Se sugiere leer la sección **Documentación Endpoints (Swagger)** para poder tener una idea de como usar cada unos de los endpoints
 
-```bash
-  http://localhost:8080/api-docs/
-```
 
 ![documentación swagger](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/inmagen%204.JPG)
 
@@ -69,7 +90,7 @@
 
 ![login admins](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%205.JPG)
 
-- Y la otra pestaña donde despuues de haber creado su usuario deberá colocar aqui los datos de login para poder tener su token de autenticación
+- Y la otra pestaña donde despues de haber creado respectivamente su usuario podrá colocar aqui los datos de y asi poder obtener su token de autenticación
 
 ![login usuario normal](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%206.JPG)
 

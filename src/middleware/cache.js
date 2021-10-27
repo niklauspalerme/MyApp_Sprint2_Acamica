@@ -1,5 +1,8 @@
 const redisDb = require('redis');
-const redis = redisDb.createClient();
+const redis = redisDb.createClient({
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT
+});
 
 redis.on("error", function(error) {
     console.error(error);    

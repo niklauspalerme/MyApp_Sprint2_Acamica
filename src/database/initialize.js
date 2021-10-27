@@ -16,8 +16,6 @@ async function initialize() {
     //User
     if (resultUser.length === 0 ){
      
-        console.log("Entro aca");
-
         const password = "admins";
         encryptedPassword = jwt.sign({password},  global.process.env.JWT_PASS);
 
@@ -30,6 +28,8 @@ async function initialize() {
             admins: true,
             disabled: false
         });
+
+        console.log("Se crea el usuario admins");
     }
 
     //Payment Method
@@ -46,6 +46,8 @@ async function initialize() {
         await PaymentMethod.create({
             name: "Credito"
         });
+
+        console.log("Se crea los metodos de pagos");
     }
 
     //Products
@@ -80,9 +82,7 @@ async function initialize() {
         })
 
 
-
-
-
+        console.log("Se crea los productos");
     }
 
   }catch(error){
