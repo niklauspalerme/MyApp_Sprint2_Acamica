@@ -33,15 +33,15 @@ Ejecuete el siguiente comando para iniciar la instalación de los paquetes node 
 
 Para ejecutar el proyecto hay que crear las variables en el archivo llamado `.env`. Puede utilizar también el archivo `sample.env` como referencia para su creación
 
-`PORT` puerto del servidor express (por defecto se sugiere usar 8080)
-`DB_USERNAME` usuario que conecta con permisos de insert/update/delete a la base de MySql
-`DB_PASSWORD` contraseña del usuario
-`DB_NAME` nombre de la base en MySQL
-`DB_PORT` puerto del servidor MySQL
-`DB_HOST` servidor del MySQL
-`REDIS_HOST` servidor del Redis
-`REDIS_PORT` puerto del servidor del redis
-`JWT_PASS` key para armar la valicación por JWT (puede utilizar cualquier valor)
+- `PORT` puerto del servidor express (por defecto se sugiere usar 8080)
+- `DB_USERNAME` usuario que conecta con permisos de insert/update/delete a la base de MySql
+- `DB_PASSWORD` contraseña del usuario
+- `DB_NAME` nombre de la base en MySQL
+- `DB_PORT` puerto del servidor MySQL
+- `DB_HOST` servidor del MySQL
+- `REDIS_HOST` servidor del Redis
+- `REDIS_PORT` puerto del servidor del redis
+- `JWT_PASS` key para armar la valicación por JWT (puede utilizar cualquier valor)
 
 ## Ejecución de la APP
 
