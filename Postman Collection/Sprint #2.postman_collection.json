@@ -15,7 +15,8 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJuaWt5dXlvIiwibmFtZSI6Im5pa3l1eW8iLCJlbWFpbCI6Im5pa3l1eW9AZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJuaWt5dXlvIiwiYWRtaW5zIjpmYWxzZSwiZGlzYWJsZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTA4LTI0VDAyOjE2OjAzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA4LTI0VDAyOjE2OjAzLjAwMFoiLCJpYXQiOjE2Mjk4NTIyMTh9.LWkeuAoXSRPBzDymru2l-_bbD6OGacJy111J6wS_9cU",
+								"value": "",
+								"description": "Todos pueden acceder",
 								"type": "text"
 							}
 						],
@@ -42,13 +43,13 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODUyMzg3fQ.9YWAkz0UnRA4feJkee5aaALys1YmF9GNq20gW3P4WC4",
+								"value": "",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"name\": \"Credito\"}",
+							"raw": "{\"name\": \"Fiado\"}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -77,14 +78,14 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "token",
-								"value": "1321231231312",
+								"key": "authentication",
+								"value": "",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"name\": \"Credio banesco\"}",
+							"raw": "{\"name\": \"Credito banesco\"}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -92,7 +93,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/mediosDePago/1",
+							"raw": "http://localhost:8080/api/v1/mediosDePago/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -102,7 +103,7 @@
 								"api",
 								"v1",
 								"mediosDePago",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -114,8 +115,8 @@
 						"method": "DELETE",
 						"header": [
 							{
-								"key": "token",
-								"value": "1321231231312",
+								"key": "authentication",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -129,7 +130,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/mediosDePago/1",
+							"raw": "http://localhost:8080/api/v1/mediosDePago/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -139,7 +140,7 @@
 								"api",
 								"v1",
 								"mediosDePago",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -158,8 +159,7 @@
 							{
 								"key": "authentication",
 								"value": "",
-								"type": "text",
-								"description": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODk2MjU1fQ.bV_CZQCOYffYLlEAktKAgQ0ci4su5zP0UE8AJidUmwQ"
+								"type": "text"
 							}
 						],
 						"url": {
@@ -186,7 +186,7 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJuaWt5dXlvMyIsIm5hbWUiOiJOaWNvbGUgUGFsZXJtbyIsImVtYWlsIjoibmlreXV5bzNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEzMzQ0NTUzMzMzIiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKd1lYTnpkMjl5WkNJNkltNXBhM2wxZVc4aUxDSnBZWFFpT2pFMk16QTBNVFExTWpsOS5UYnlwcXhMZUphTnA3WlRuOFhobFp1RlZfQlJGaGNzZF9fbDBfazZUUGxzIiwiYWRtaW5zIjpmYWxzZSwiZGlzYWJsZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTA4LTMxVDEyOjU1OjI5LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA5LTAxVDEyOjU2OjAzLjAwMFoiLCJpYXQiOjE2MzA5NjM3MzgsImV4cCI6MTYzMDk2NzMzOH0.97nxGpJQmMhOxtltX5pPCLSoc6rWfWiwA6Xdd12rdvc",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -213,7 +213,8 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJuaWt5dXlvMyIsIm5hbWUiOiJOaWNvbGUgUGFsZXJtbyIsImVtYWlsIjoibmlreXV5bzNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEzMzQ0NTUzMzMzIiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKd1lYTnpkMjl5WkNJNkltNXBhM2wxZVc4aUxDSnBZWFFpT2pFMk16QTBNVFExTWpsOS5UYnlwcXhMZUphTnA3WlRuOFhobFp1RlZfQlJGaGNzZF9fbDBfazZUUGxzIiwiYWRtaW5zIjpmYWxzZSwiZGlzYWJsZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTA4LTMxVDEyOjU1OjI5LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA5LTAxVDEyOjU2OjAzLjAwMFoiLCJpYXQiOjE2MzA5NjM3MzgsImV4cCI6MTYzMDk2NzMzOH0.97nxGpJQmMhOxtltX5pPCLSoc6rWfWiwA6Xdd12rdvc",
+								"value": "",
+								"description": "Todos pueden acceder",
 								"type": "text"
 							}
 						],
@@ -263,7 +264,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/agendas/5",
+							"raw": "http://localhost:8080/api/v1/agendas/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -273,7 +274,7 @@
 								"api",
 								"v1",
 								"agendas",
-								"5"
+								"4"
 							]
 						}
 					},
@@ -286,7 +287,7 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODk2MjU1fQ.bV_CZQCOYffYLlEAktKAgQ0ci4su5zP0UE8AJidUmwQ",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -300,7 +301,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/agendas/3",
+							"raw": "http://localhost:8080/api/v1/agendas/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -310,7 +311,7 @@
 								"api",
 								"v1",
 								"agendas",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -322,13 +323,14 @@
 			"name": "Productos",
 			"item": [
 				{
-					"name": "/api/v1/productos",
+					"name": "/productos",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "authentication",
 								"value": "",
+								"description": "Todos pueden acceder",
 								"type": "text"
 							}
 						],
@@ -349,19 +351,19 @@
 					"response": []
 				},
 				{
-					"name": "/api/v1/productos",
+					"name": "/productos",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODQ5NTY0fQ.EAhmLlqpF_6BfSoQDYrBeU5yzZzlaLnC2ej22-1T5z4",
+								"value": "",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 2\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
+							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 5\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -385,19 +387,20 @@
 					"response": []
 				},
 				{
-					"name": "/api/v1/productos/:id",
+					"name": "/productos/:id",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODQ5NTY0fQ.EAhmLlqpF_6BfSoQDYrBeU5yzZzlaLnC2ej22-1T5z4",
+								"value": "",
+								"description": "Solo el Admins",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 4\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
+							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 10\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -422,13 +425,14 @@
 					"response": []
 				},
 				{
-					"name": "/api/v1/productos/:id",
+					"name": "productos/:id",
 					"request": {
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODQ5NTY0fQ.EAhmLlqpF_6BfSoQDYrBeU5yzZzlaLnC2ej22-1T5z4",
+								"value": "",
+								"description": "Solo el Admins",
 								"type": "text"
 							},
 							{
@@ -448,7 +452,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/productos/7",
+							"raw": "http://localhost:8080/api/v1/productos/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -458,7 +462,7 @@
 								"api",
 								"v1",
 								"productos",
-								"7"
+								"5"
 							]
 						}
 					},
@@ -479,7 +483,7 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -515,13 +519,13 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"value": "",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Nicole Palermo\",\r\n  \"mobile\": \"113344553333\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -548,16 +552,10 @@
 					"name": "/usuarios/signin",
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"nikyuyo3\",\r\n    \"name\": \"Nicolas Palermo\",\r\n    \"email\": \"nikyuyo3@gmail.com\",\r\n    \"mobile\": \"11-22544572\",\r\n    \"address\": \"CABA, Flores, Bolivia 470, 28\",\r\n    \"password\": \"nikyuyo\"\r\n}",
+							"raw": "{\r\n    \"username\": \"nikyuyo\",\r\n    \"name\": \"Nicolas Palermo\",\r\n    \"email\": \"nikyuyo3@gmail.com\",\r\n    \"mobile\": \"11-22544572\",\r\n    \"address\": \"CABA, Flores, Bolivia 470, 28\",\r\n    \"password\": \"nikyuyo\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -585,16 +583,10 @@
 					"name": "/usuarios/login",
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"nikyuyo3\",\r\n    \"password\": \"nikyuyo\"\r\n}",
+							"raw": "{\r\n    \"username\": \"nikyuyo\",\r\n    \"password\": \"nikyuyo\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -622,13 +614,7 @@
 					"name": "/usuarios/login (Admis)",
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
@@ -665,7 +651,7 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -702,13 +688,13 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"value": "",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -739,7 +725,7 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnNAZ21haWwuY29tIiwibW9iaWxlIjoiMTEtMjI1NC00NTcyIiwicGFzc3dvcmQiOiJhZG1pbnMiLCJhZG1pbnMiOnRydWUsImRpc2FibGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wOC0yNFQwMjoxNDo0My4wMDBaIiwiaWF0IjoxNjI5ODM2Njk1fQ.8kDOZlHuEVfHdWBjW_c8u226rxiDCeYv6YPBhiVrh8Y",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -784,7 +770,8 @@
 							{
 								"key": "authentication",
 								"value": "",
-								"type": "text"
+								"type": "text",
+								"description": "Todos pueden Acceder"
 							}
 						],
 						"url": {
@@ -816,7 +803,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"addressId\": 1,\r\n    \"paymentMethodId\": 2,\r\n    \"products\":[{\r\n        \"productId\": 2,\r\n        \"quantity\": 2\r\n    },{\r\n        \"productId\": 1,\r\n        \"quantity\": 2\r\n    }]\r\n}",
+							"raw": "{\r\n    \"addressId\": 6,\r\n    \"paymentMethodId\": 2,\r\n    \"products\":[{\r\n        \"productId\": 2,\r\n        \"quantity\": 2\r\n    },{\r\n        \"productId\": 1,\r\n        \"quantity\": 2\r\n    }]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -847,6 +834,7 @@
 							{
 								"key": "authentication",
 								"value": "",
+								"description": "Solo el Admins",
 								"type": "text"
 							}
 						],
@@ -875,11 +863,12 @@
 							{
 								"key": "authentication",
 								"value": "",
-								"type": "text"
+								"type": "text",
+								"description": "Todos pueden acceder"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/pedidos/6",
+							"raw": "http://localhost:8080/api/v1/pedidos/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -889,7 +878,7 @@
 								"api",
 								"v1",
 								"pedidos",
-								"6"
+								"1"
 							]
 						}
 					},
@@ -908,7 +897,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"addressId\": 5,\r\n    \"paymentMethodId\": 2,\r\n    \"products\":[{\r\n        \"productId\": 1,\r\n        \"quantity\": 1\r\n    },{\r\n        \"productId\": 2,\r\n        \"quantity\": 1\r\n    }]\r\n}",
+							"raw": "{\r\n    \"addressId\": 6,\r\n    \"paymentMethodId\": 1,\r\n    \"products\":[{\r\n        \"productId\": 1,\r\n        \"quantity\": 1\r\n    },{\r\n        \"productId\": 2,\r\n        \"quantity\": 2\r\n    }]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -916,7 +905,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/pedidos/6",
+							"raw": "http://localhost:8080/api/v1/pedidos/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -926,7 +915,7 @@
 								"api",
 								"v1",
 								"pedidos",
-								"6"
+								"1"
 							]
 						}
 					},
@@ -944,7 +933,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/pedidos/5",
+							"raw": "http://localhost:8080/api/v1/pedidos/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -954,7 +943,7 @@
 								"api",
 								"v1",
 								"pedidos",
-								"5"
+								"1"
 							]
 						}
 					},
@@ -967,13 +956,14 @@
 						"header": [
 							{
 								"key": "authentication",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbnMiLCJuYW1lIjoiYWRtaW5zIiwiZW1haWwiOiJhZG1pbnMxQGdtYWlsLmNvbSIsIm1vYmlsZSI6IjExLTIyNTQtNDU3MiIsInBhc3N3b3JkIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SndZWE56ZDI5eVpDSTZJbUZrYldsdWN5SXNJbWxoZENJNk1UWXpNREF4TnpRM04zMC52dkxnNTFyek53WFVXN2JvTXRWT1d3QTVhVzlpdGFSbEpmZWY5OGwxalcwIiwiYWRtaW5zIjp0cnVlLCJkaXNhYmxlZCI6ZmFsc2UsImNyZWF0ZWRBdCI6IjIwMjEtMDgtMjZUMjI6Mzc6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDgtMjZUMjI6Mzc6NTcuMDAwWiIsImlhdCI6MTYzMDAxNzQ4OX0.z1E8uFjkKDUfz1aLzp4SbyRaeoT7-TaKDET5vf3AV70",
-								"type": "text"
+								"value": "",
+								"type": "text",
+								"description": "Solo el Admins"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"state\": \"Preparing\"\r\n}",
+							"raw": "{\r\n    \"state\": \"Processing\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
