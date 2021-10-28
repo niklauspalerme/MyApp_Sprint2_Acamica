@@ -1,8 +1,8 @@
 {
-  "name": "sprint1",
+  "name": "sprint2",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Proyecto entrega del Sprint#2",
+  "main": "src/main.js",
   "scripts": {
     "test": "mocha",
     "dev": "nodemon src/main.js"

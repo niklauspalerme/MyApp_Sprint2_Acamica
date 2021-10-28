@@ -72,7 +72,7 @@ const checkAddressVsUserId = async (req,resp,next)=>{
         if (result !== null)
             next();
         else
-            resp.status(403).json({"Message": "Operación Prohibida, coloque otro AddressId"});
+            resp.status(403).json({"Message": "Operación Prohibida, coloque otro AddressId que sea suyo"});
 
 
     } catch (error) {
